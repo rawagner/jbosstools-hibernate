@@ -18,6 +18,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		<module>hibernate-search-plugins</module>
 		<module>tests</module>
 		<module>hibernate-search-tests</module>
+		<module>itests</module>
+		<module>test-framework</module>
 		<module>features</module>
 		<module>site</module>
 	</modules>

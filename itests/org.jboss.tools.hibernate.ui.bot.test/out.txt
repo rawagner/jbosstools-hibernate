@@ -1,0 +1,801 @@
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T17:41:47+01:00)
+Maven home: /usr/local/Cellar/maven/3.3.9/libexec
+Java version: 1.8.0_91, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.12.5", arch: "x86_64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/local/Cellar/maven/3.3.9/libexec/conf/settings.xml
+[DEBUG] Reading user settings from /Users/psrna/.m2/settings.xml
+[DEBUG] Reading global toolchains from /usr/local/Cellar/maven/3.3.9/libexec/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/psrna/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/psrna/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/psrna/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=93, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=42, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6, ConflictResolver.conflictItemCount=92, DefaultDependencyCollector.collectTime=145, DefaultDependencyCollector.transformTime=10}
+[DEBUG] org.eclipse.tycho:tycho-maven-plugin:jar:1.0.0:
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:1.0.0:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]                org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.7:compile
+[DEBUG]       org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.9.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.4.1:compile
+[DEBUG]             commons-io:commons-io:jar:2.2:compile
+[DEBUG]          org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947:compile
+[DEBUG]          org.eclipse.tycho:sisu-equinox-api:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:1.0.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0:compile
+[DEBUG]       org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:1.0.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0:compile
+[DEBUG] Created new class realm extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0
+[DEBUG] Importing foreign packages into class realm extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-maven-plugin:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-core:jar:1.0.0
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-api:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-metadata-model:jar:1.0.0
+[DEBUG]   Included: de.pdark:decentxml:jar:1.3
+[DEBUG]   Included: org.eclipse.tycho:tycho-embedder-api:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-p2-facade:jar:1.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=84, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=71, DefaultDependencyCollector.collectTime=156, DefaultDependencyCollector.transformTime=2}
+[DEBUG] org.sonatype.plugins:nexus-staging-maven-plugin:jar:1.6.7:
+[DEBUG]    org.sonatype.nexus.maven:nexus-common:jar:1.6.7:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile
+[DEBUG]    com.google.guava:guava:jar:14.0.1:compile
+[DEBUG]    org.sonatype.nexus:nexus-client-core:jar:2.9.1-02:compile
+[DEBUG]       org.sonatype.nexus.plugins:nexus-restlet1x-model:jar:2.9.1-02:compile
+[DEBUG]          org.apache.maven:maven-model:jar:3.0.4:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.7:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       com.intellij:annotations:jar:9.0.4:compile
+[DEBUG]       commons-io:commons-io:jar:2.4:compile
+[DEBUG]       com.thoughtworks.xstream:xstream:jar:1.4.7:compile
+[DEBUG]          xmlpull:xmlpull:jar:1.1.3.1:compile
+[DEBUG]          xpp3:xpp3_min:jar:1.1.4c:compile
+[DEBUG]       joda-time:joda-time:jar:2.2:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]       commons-beanutils:commons-beanutils-core:jar:1.8.3:compile
+[DEBUG]       org.sonatype.sisu.siesta:siesta-client:jar:1.7:compile
+[DEBUG]          org.sonatype.sisu.siesta:siesta-common:jar:1.7:compile
+[DEBUG]             javax.ws.rs:jsr311-api:jar:1.1.1:compile
+[DEBUG]             com.sun.jersey:jersey-core:jar:1.17.1:compile
+[DEBUG]             javax.validation:validation-api:jar:1.1.0.Final:compile
+[DEBUG]          com.sun.jersey:jersey-client:jar:1.17.1:compile
+[DEBUG]          com.sun.jersey.contribs:jersey-apache-client4:jar:1.17.1:compile
+[DEBUG]       org.sonatype.sisu.siesta:siesta-jackson:jar:1.7:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.3.1:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.3.1:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.3.1:compile
+[DEBUG]          com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1:compile
+[DEBUG]             com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1:compile
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1:compile
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.3.5:compile
+[DEBUG]          commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]       org.apache.httpcomponents:httpcore:jar:4.3.2:compile
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.7.7:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]    org.sonatype.spice.zapper:spice-zapper:jar:1.3:compile
+[DEBUG]       org.fusesource.hawtbuf:hawtbuf-proto:jar:1.9:compile
+[DEBUG]          org.fusesource.hawtbuf:hawtbuf:jar:1.9:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.sonatype.aether:aether-api:jar:1.13.1:compile
+[DEBUG]    ch.qos.logback:logback-core:jar:1.1.2:runtime
+[DEBUG]    ch.qos.logback:logback-classic:jar:1.1.2:runtime
+[DEBUG] Created new class realm extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7
+[DEBUG] Importing foreign packages into class realm extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7
+[DEBUG]   Included: org.sonatype.plugins:nexus-staging-maven-plugin:jar:1.6.7
+[DEBUG]   Included: org.sonatype.nexus.maven:nexus-common:jar:1.6.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: com.google.guava:guava:jar:14.0.1
+[DEBUG]   Included: org.sonatype.nexus:nexus-client-core:jar:2.9.1-02
+[DEBUG]   Included: org.sonatype.nexus.plugins:nexus-restlet1x-model:jar:2.9.1-02
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: com.intellij:annotations:jar:9.0.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.4
+[DEBUG]   Included: com.thoughtworks.xstream:xstream:jar:1.4.7
+[DEBUG]   Included: xmlpull:xmlpull:jar:1.1.3.1
+[DEBUG]   Included: xpp3:xpp3_min:jar:1.1.4c
+[DEBUG]   Included: joda-time:joda-time:jar:2.2
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.6
+[DEBUG]   Included: commons-beanutils:commons-beanutils-core:jar:1.8.3
+[DEBUG]   Included: org.sonatype.sisu.siesta:siesta-client:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu.siesta:siesta-common:jar:1.7
+[DEBUG]   Included: javax.ws.rs:jsr311-api:jar:1.1.1
+[DEBUG]   Included: com.sun.jersey:jersey-core:jar:1.17.1
+[DEBUG]   Included: javax.validation:validation-api:jar:1.1.0.Final
+[DEBUG]   Included: com.sun.jersey:jersey-client:jar:1.17.1
+[DEBUG]   Included: com.sun.jersey.contribs:jersey-apache-client4:jar:1.17.1
+[DEBUG]   Included: org.sonatype.sisu.siesta:siesta-jackson:jar:1.7
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.3.1
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.3.1
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.3.1
+[DEBUG]   Included: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.1
+[DEBUG]   Included: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.1
+[DEBUG]   Included: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.1
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.3.5
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.3.2
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.7.7
+[DEBUG]   Included: org.sonatype.spice.zapper:spice-zapper:jar:1.3
+[DEBUG]   Included: org.fusesource.hawtbuf:hawtbuf-proto:jar:1.9
+[DEBUG]   Included: org.fusesource.hawtbuf:hawtbuf:jar:1.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: ch.qos.logback:logback-core:jar:1.1.2
+[DEBUG]   Included: ch.qos.logback:logback-classic:jar:1.1.2
+[DEBUG] Extension realms for project org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:eclipse-test-plugin:5.2.0-SNAPSHOT: [ClassRealm[extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0, parent: sun.misc.Launcher$AppClassLoader@55f96302], ClassRealm[extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7, parent: sun.misc.Launcher$AppClassLoader@55f96302]]
+[DEBUG] Created new class realm project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Populating class realm project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Looking up lifecyle mappings for packaging eclipse-test-plugin from ClassRealm[project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Extension realms for project org.jboss.tools.hibernatetools:itests:pom:5.2.0-SNAPSHOT: [ClassRealm[extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0, parent: sun.misc.Launcher$AppClassLoader@55f96302], ClassRealm[extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7, parent: sun.misc.Launcher$AppClassLoader@55f96302]]
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[DEBUG] Extension realms for project org.jboss.tools:hibernatetools:pom:5.2.0-SNAPSHOT: [ClassRealm[extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0, parent: sun.misc.Launcher$AppClassLoader@55f96302], ClassRealm[extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7, parent: sun.misc.Launcher$AppClassLoader@55f96302]]
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.jboss.tools:parent:4.5.0.AM1-SNAPSHOT/maven-metadata.xml, locally installed metadata up-to-date.
+[DEBUG] Extension realms for project org.jboss.tools:parent:pom:4.5.0.AM1-SNAPSHOT: [ClassRealm[extension>org.eclipse.tycho:tycho-maven-plugin:1.0.0, parent: sun.misc.Launcher$AppClassLoader@55f96302], ClassRealm[extension>org.sonatype.plugins:nexus-staging-maven-plugin:1.6.7, parent: sun.misc.Launcher$AppClassLoader@55f96302]]
+[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[DEBUG] org.eclipse.tycho:tycho-packaging-plugin:1.0.0 configured in MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-maven-plugin:1.0.0 configured in MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-surefire-plugin:1.0.0 configured in MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-source-plugin:1.0.0 configured in MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-p2-plugin:1.0.0 configured in MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] target-platform-configuration for MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml:
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <target>
+    <artifact>
+      <groupId>org.jboss.tools.targetplatforms</groupId>
+      <artifactId>jbosstools-unified</artifactId>
+      <version>4.70.0.AM1-SNAPSHOT</version>
+      <classifier>jbosstools-unified</classifier>
+    </artifact>
+  </target>
+  <resolver>p2</resolver>
+  <ignoreTychoRepositories>true</ignoreTychoRepositories>
+  <environments>
+    <environment>
+      <os>macosx</os>
+      <ws>cocoa</ws>
+      <arch>x86_64</arch>
+    </environment>
+    <environment>
+      <os>win32</os>
+      <ws>win32</ws>
+      <arch>x86</arch>
+    </environment>
+    <environment>
+      <os>win32</os>
+      <ws>win32</ws>
+      <arch>x86_64</arch>
+    </environment>
+    <environment>
+      <os>linux</os>
+      <ws>gtk</ws>
+      <arch>x86</arch>
+    </environment>
+    <environment>
+      <os>linux</os>
+      <ws>gtk</ws>
+      <arch>x86_64</arch>
+    </environment>
+  </environments>
+</configuration>
+[DEBUG] Could not find metadata org.jboss.tools.targetplatforms:jbosstools-unified:4.70.0.AM1-SNAPSHOT/maven-metadata.xml in local (/Users/psrna/.m2/repository)
+[DEBUG] Failure to find org.jboss.tools.targetplatforms:jbosstools-unified:4.70.0.AM1-SNAPSHOT/maven-metadata.xml in https://repository.jboss.org/nexus/content/repositories/releases was cached in the local repository, resolution will not be reattempted until the update interval of jboss-releases has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.jboss.tools.targetplatforms:jbosstools-unified:4.70.0.AM1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Failure to find org.jboss.tools.targetplatforms:jbosstools-unified:4.70.0.AM1-SNAPSHOT/maven-metadata.xml in https://repository.jboss.org/nexus/content/repositories/jbosstools-experiments/ was cached in the local repository, resolution will not be reattempted until the update interval of jbosstools-experiments has elapsed or updates are forced
+[DEBUG] Skipped remote request for org.jboss.tools.targetplatforms:jbosstools-unified:4.70.0.AM1-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Failure to find org.jboss.tools.targetplatforms:jbosstools-unified:4.70.0.AM1-SNAPSHOT/maven-metadata.xml in http://maven.repository.redhat.com/ga/ was cached in the local repository, resolution will not be reattempted until the update interval of jboss-ga-repository has elapsed or updates are forced
+Debug options:
+    file:/Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/.options not found
+Time to load bundles: 141
+!SESSION 2017-06-14 12:52:32.342 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -eclipse.keyring /var/folders/40/nmzqdw3n2f50bt94vlp0rq440000gn/T/tycho869260366336198187secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/40/nmzqdw3n2f50bt94vlp0rq440000gn/T/tycho869260366336198187secure_storage -debug -consoleLog
+
+!ENTRY org.eclipse.core.net 1 0 2017-06-14 12:52:32.343
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+[DEBUG] Clearing proxy settings in OSGi runtime
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=255, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=67, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3, ConflictResolver.conflictItemCount=148, DefaultDependencyCollector.collectTime=56, DefaultDependencyCollector.transformTime=5}
+[DEBUG] org.eclipse.tycho:tycho-surefire-plugin:jar:1.0.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:1.0.0:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.9.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.4.1:compile
+[DEBUG]             commons-io:commons-io:jar:2.2:compile
+[DEBUG]          org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:1.0.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0:compile
+[DEBUG]       org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]    org.eclipse.tycho:sisu-equinox-launching:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-api:jar:1.0.0:compile
+[DEBUG]       org.apache.commons:commons-exec:jar:1.2:compile
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.osgibooter:jar:1.0.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.junit:jar:1.0.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.junit4:jar:1.0.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.junit47:jar:1.0.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.testng:jar:1.0.0:runtime
+[DEBUG]    org.apache.maven.surefire:surefire-api:jar:2.17:compile
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:1.0.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.17:compile
+[DEBUG]       org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3:provided
+[DEBUG]       org.apache.maven.surefire:surefire-booter:jar:2.17:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.5.5:provided
+[DEBUG]             org.apache.xbean:xbean-reflect:jar:3.4:provided
+[DEBUG]                log4j:log4j:jar:1.2.12:provided
+[DEBUG]                commons-logging:commons-logging-api:jar:1.1:provided
+[DEBUG]             com.google.collections:google-collections:jar:1.0:provided
+[DEBUG]             junit:junit:jar:4.11:test
+[DEBUG]                org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-surefire-plugin:1.0.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-surefire-plugin:1.0.0
+[DEBUG]   Imported:  < project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-surefire-plugin:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-surefire-plugin:jar:1.0.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-launching:jar:1.0.0
+[DEBUG]   Included: org.apache.commons:commons-exec:jar:1.2
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.osgibooter:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.junit:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.junit4:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.junit47:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.testng:jar:1.0.0
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.17
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.17
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.17
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=174, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=111, DefaultDependencyCollector.collectTime=14, DefaultDependencyCollector.transformTime=2}
+[DEBUG] org.eclipse.tycho:tycho-source-plugin:jar:1.0.0:
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:1.0.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947:compile
+[DEBUG]          org.eclipse.tycho:sisu-equinox-api:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.apache.maven.plugins:maven-source-plugin:jar:2.1:compile
+[DEBUG]       org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.9.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.4.1:compile
+[DEBUG]             commons-io:commons-io:jar:2.2:compile
+[DEBUG]          org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:1.0.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0:compile
+[DEBUG]       org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]    org.eclipse.tycho:tycho-packaging-plugin:jar:1.0.0:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-source-plugin:1.0.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-source-plugin:1.0.0
+[DEBUG]   Imported:  < project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-source-plugin:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-source-plugin:jar:1.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.apache.maven.plugins:maven-source-plugin:jar:2.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419
+[DEBUG]   Included: org.eclipse.tycho:tycho-packaging-plugin:jar:1.0.0
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=316, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=85, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=156, DefaultDependencyCollector.collectTime=156, DefaultDependencyCollector.transformTime=3}
+[DEBUG] org.jboss.tools.tycho-plugins:repository-utils:jar:1.0.0:
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947:compile
+[DEBUG]          org.eclipse.tycho:sisu-equinox-api:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0:compile
+[DEBUG]    org.eclipse.tycho:tycho-packaging-plugin:jar:1.0.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]       org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.9.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.4.1:compile
+[DEBUG]          org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:1.0.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0:compile
+[DEBUG]       org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]    net.sf.saxon:saxon:jar:8.7:compile
+[DEBUG]    net.sf.saxon:saxon-dom:jar:8.7:compile
+[DEBUG]    org.jboss:jboss-dmr:jar:1.2.0.Final:compile
+[DEBUG]    com.googlecode.maven-download-plugin:download-maven-plugin:jar:1.2.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0:compile
+[DEBUG]          org.apache.maven:maven-profile:jar:2.0:compile
+[DEBUG]          org.apache.maven:maven-artifact-manager:jar:2.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:compile
+[DEBUG]             junit:junit:jar:3.8.1:compile
+[DEBUG]             classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]       commons-io:commons-io:jar:1.4:compile
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.0-beta2:compile
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.0-beta3:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.1.1:compile
+[DEBUG]          commons-codec:commons-codec:jar:1.3:compile
+[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:2.4:compile
+[DEBUG]    org.eclipse.jgit:org.eclipse.jgit:jar:3.6.0.201411121045-m1:compile
+[DEBUG]       com.jcraft:jsch:jar:0.1.50:compile
+[DEBUG]       com.googlecode.javaewah:JavaEWAH:jar:0.7.9:compile
+[DEBUG]    pl.project13.maven:git-commit-id-plugin:jar:2.1.13:compile
+[DEBUG]       com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.2.3:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.2.3:compile
+[DEBUG]       joda-time:joda-time:jar:2.0:compile
+[DEBUG]       com.google.guava:guava:jar:15.0:compile
+[DEBUG]       com.intellij:annotations:jar:9.0.4:compile
+[DEBUG]    org.tukaani:xz:jar:1.5:compile
+[DEBUG]    org.jsoup:jsoup:jar:1.10.2:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-component-annotations:jar:1.5.4:compile
+[DEBUG] Created new class realm plugin>org.jboss.tools.tycho-plugins:repository-utils:1.0.0
+[DEBUG] Importing foreign packages into class realm plugin>org.jboss.tools.tycho-plugins:repository-utils:1.0.0
+[DEBUG]   Imported:  < project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.jboss.tools.tycho-plugins:repository-utils:1.0.0
+[DEBUG]   Included: org.jboss.tools.tycho-plugins:repository-utils:jar:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-packaging-plugin:jar:1.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4.1
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419
+[DEBUG]   Included: net.sf.saxon:saxon:jar:8.7
+[DEBUG]   Included: net.sf.saxon:saxon-dom:jar:8.7
+[DEBUG]   Included: org.jboss:jboss-dmr:jar:1.2.0.Final
+[DEBUG]   Included: com.googlecode.maven-download-plugin:download-maven-plugin:jar:1.2.0
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: commons-io:commons-io:jar:1.4
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0-beta2
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0-beta3
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.1.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.3
+[DEBUG]   Included: org.eclipse.jgit:org.eclipse.jgit:jar:3.6.0.201411121045-m1
+[DEBUG]   Included: com.jcraft:jsch:jar:0.1.50
+[DEBUG]   Included: com.googlecode.javaewah:JavaEWAH:jar:0.7.9
+[DEBUG]   Included: pl.project13.maven:git-commit-id-plugin:jar:2.1.13
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.2.3
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.2.3
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.2.3
+[DEBUG]   Included: joda-time:joda-time:jar:2.0
+[DEBUG]   Included: com.google.guava:guava:jar:15.0
+[DEBUG]   Included: com.intellij:annotations:jar:9.0.4
+[DEBUG]   Included: org.tukaani:xz:jar:1.5
+[DEBUG]   Included: org.jsoup:jsoup:jar:1.10.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.4
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=96, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=44, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=95, DefaultDependencyCollector.collectTime=2, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.eclipse.tycho.extras:tycho-p2-extras-plugin:jar:1.0.0:
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:1.0.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.eclipse.tycho:tycho-core:jar:1.0.0:compile
+[DEBUG]          org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]             org.apache.maven:maven-model:jar:3.0:provided
+[DEBUG]             org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]             org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]             org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]             org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]             org.apache.maven:maven-model-builder:jar:3.0:provided
+[DEBUG]             org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]             org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]                org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]             org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]                org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]                   org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]             org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]             org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]                org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]          org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]          org.codehaus.plexus:plexus-archiver:jar:2.9.1:compile
+[DEBUG]             org.codehaus.plexus:plexus-io:jar:2.4.1:compile
+[DEBUG]                commons-io:commons-io:jar:2.2:compile
+[DEBUG]             org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419:compile
+[DEBUG]          org.eclipse.tycho:tycho-metadata-model:jar:1.0.0:compile
+[DEBUG]             de.pdark:decentxml:jar:1.3:compile
+[DEBUG]          org.eclipse.tycho:tycho-embedder-api:jar:1.0.0:compile
+[DEBUG]             org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0:compile
+[DEBUG]          org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]             org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0:compile
+[DEBUG]    org.eclipse.tycho:sisu-equinox-launching:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-api:jar:1.0.0:compile
+[DEBUG]       org.apache.commons:commons-exec:jar:1.2:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho.extras:tycho-p2-extras-plugin:1.0.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho.extras:tycho-p2-extras-plugin:1.0.0
+[DEBUG]   Imported:  < project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho.extras:tycho-p2-extras-plugin:1.0.0
+[DEBUG]   Included: org.eclipse.tycho.extras:tycho-p2-extras-plugin:jar:1.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-launching:jar:1.0.0
+[DEBUG]   Included: org.apache.commons:commons-exec:jar:1.2
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=102, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=46, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=101, DefaultDependencyCollector.collectTime=5, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.eclipse.tycho:tycho-p2-plugin:jar:1.0.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile
+[DEBUG]    org.eclipse.tycho:sisu-equinox-launching:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:tycho-core:jar:1.0.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-archiver:jar:2.9.1:compile
+[DEBUG]             org.codehaus.plexus:plexus-io:jar:2.4.1:compile
+[DEBUG]                commons-io:commons-io:jar:2.2:compile
+[DEBUG]             org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419:compile
+[DEBUG]          org.eclipse.tycho:tycho-metadata-model:jar:1.0.0:compile
+[DEBUG]             de.pdark:decentxml:jar:1.3:compile
+[DEBUG]          org.eclipse.tycho:tycho-embedder-api:jar:1.0.0:compile
+[DEBUG]             org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:1.0.0:compile
+[DEBUG]          org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]             org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-api:jar:1.0.0:compile
+[DEBUG]       org.apache.commons:commons-exec:jar:1.2:compile
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:1.0.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.11.2.v20161107-1947:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:1.0.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:1.0.0:compile
+[DEBUG]    org.eclipse.tycho:tycho-artifactcomparator:jar:1.0.0:compile
+[DEBUG]       org.ow2.asm:asm-debug-all:jar:5.0.3:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-p2-plugin:1.0.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-p2-plugin:1.0.0
+[DEBUG]   Imported:  < project>org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-p2-plugin:1.0.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-p2-plugin:jar:1.0.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-launching:jar:1.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.200.v20160504-1419
+[DEBUG]   Included: org.apache.commons:commons-exec:jar:1.2
+[DEBUG]   Included: org.eclipse.tycho:tycho-artifactcomparator:jar:1.0.0
+[DEBUG]   Included: org.ow2.asm:asm-debug-all:jar:5.0.3
+[INFO] Computing target platform for MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] Added p2 repository jbosstools-base (http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo)
+[DEBUG] Using execution environment 'JavaSE-1.8' configured in Bundle-RequiredExecutionEnvironment (first entry)
+[DEBUG] Adding target definition file "/Users/psrna/.m2/repository/org/jboss/tools/targetplatforms/jbosstools-unified/4.70.0.AM1-SNAPSHOT/jbosstools-unified-4.70.0.AM1-SNAPSHOT-jbosstools-unified.target"
+[DEBUG] Resolving target definition content...
+[INFO] Adding repository http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.70.0.AM1-SNAPSHOT/REPO
+[DEBUG] Added 1592 units, the content of the target definition file, to the target platform
+[DEBUG] Registered artifact repository org.eclipse.tycho.repository.registry.facade.RepositoryBlackboardKey(uri=file:/resolution-context-artifacts@%252FUsers%252Fpsrna%252FGitHub%252Fjbosstools-hibernate%252Fitests%252Forg.jboss.tools.hibernate.ui.bot.test)
+[INFO] Fetching p2.index from http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo/ (172B)
+[INFO] Adding repository http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-base_master/latest/all/repo
+[DEBUG] Added 320 locally built units to the target platform
+[INFO] Resolving dependencies of MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+[DEBUG] No solution found because the problem is unsatisfiable.: [Unable to satisfy dependency from org.jboss.tools.hibernate.ui.bot.test 5.2.0.qualifier to bundle org.jboss.tools.hibernate.reddeer [5.2.0,5.3.0).; No solution found because the problem is unsatisfiable.]
+[INFO] {osgi.os=macosx, osgi.ws=cocoa, org.eclipse.update.install.features=true, osgi.arch=x86_64}
+[ERROR] Cannot resolve project dependencies:
+[ERROR]   Software being installed: org.jboss.tools.hibernate.ui.bot.test 5.2.0.qualifier
+[ERROR]   Missing requirement: org.jboss.tools.hibernate.ui.bot.test 5.2.0.qualifier requires 'bundle org.jboss.tools.hibernate.reddeer [5.2.0,5.3.0)' but it could not be found
+[ERROR] 
+[ERROR] See http://wiki.eclipse.org/Tycho/Dependency_Resolution_Troubleshooting for help.
+[ERROR] Cannot resolve dependencies of MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml: See log for details -> [Help 1]
+org.apache.maven.MavenExecutionException: Cannot resolve dependencies of MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+	at org.eclipse.tycho.core.maven.TychoMavenLifecycleParticipant.afterProjectsRead(TychoMavenLifecycleParticipant.java:100)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:266)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.eclipse.tycho.artifacts.DependencyResolutionException: Cannot resolve dependencies of MavenProject: org.jboss.tools.hibernatetools.itests:org.jboss.tools.hibernate.ui.bot.test:5.2.0-SNAPSHOT @ /Users/psrna/GitHub/jbosstools-hibernate/itests/org.jboss.tools.hibernate.ui.bot.test/pom.xml
+	at org.eclipse.tycho.p2.resolver.P2ResolverImpl.resolveDependencies(P2ResolverImpl.java:202)
+	at org.eclipse.tycho.p2.resolver.P2ResolverImpl.resolveDependencies(P2ResolverImpl.java:116)
+	at org.eclipse.tycho.p2.resolver.P2DependencyResolver.doResolveDependencies(P2DependencyResolver.java:367)
+	at org.eclipse.tycho.p2.resolver.P2DependencyResolver.resolveDependencies(P2DependencyResolver.java:335)
+	at org.eclipse.tycho.core.resolver.DefaultTychoResolver.resolveProject(DefaultTychoResolver.java:117)
+	at org.eclipse.tycho.core.maven.TychoMavenLifecycleParticipant.afterProjectsRead(TychoMavenLifecycleParticipant.java:95)
+	... 14 more
+Caused by: org.eclipse.tycho.p2.util.resolution.ResolverException: See log for details
+	at org.eclipse.tycho.p2.util.resolution.ProjectorResolutionStrategy.resolve(ProjectorResolutionStrategy.java:88)
+	at org.eclipse.tycho.p2.util.resolution.AbstractResolutionStrategy.resolve(AbstractResolutionStrategy.java:42)
+	at org.eclipse.tycho.p2.resolver.P2ResolverImpl.resolveDependencies(P2ResolverImpl.java:195)
+	... 19 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MavenExecutionException
