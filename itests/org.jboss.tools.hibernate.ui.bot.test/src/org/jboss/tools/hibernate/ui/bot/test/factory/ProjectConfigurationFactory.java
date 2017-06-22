@@ -12,6 +12,9 @@ package org.jboss.tools.hibernate.ui.bot.test.factory;
 
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
 import org.jboss.reddeer.common.logging.Logger;
@@ -19,6 +22,7 @@ import org.jboss.reddeer.common.wait.TimePeriod;
 import org.jboss.reddeer.common.wait.WaitUntil;
 import org.jboss.reddeer.common.wait.WaitWhile;
 import org.jboss.reddeer.core.condition.JobIsRunning;
+import org.jboss.reddeer.core.condition.ShellWithTextIsAvailable;
 import org.jboss.reddeer.core.condition.WidgetIsFound;
 import org.jboss.reddeer.core.matcher.ClassMatcher;
 import org.jboss.reddeer.core.matcher.WithMnemonicTextMatcher;
@@ -39,6 +43,7 @@ import org.jboss.reddeer.swt.impl.combo.LabeledCombo;
 import org.jboss.reddeer.swt.impl.group.DefaultGroup;
 import org.jboss.reddeer.swt.impl.link.DefaultLink;
 import org.jboss.reddeer.swt.impl.shell.DefaultShell;
+import org.jboss.reddeer.swt.impl.tree.DefaultTree;
 import org.jboss.reddeer.swt.impl.tree.DefaultTreeItem;
 import org.jboss.reddeer.uiforms.impl.hyperlink.DefaultHyperlink;
 import org.jboss.tools.hibernate.reddeer.editor.JpaXmlEditor;
@@ -99,12 +104,14 @@ public class ProjectConfigurationFactory {
 		
 		ExplorerItemPropertyDialog pd = new ExplorerItemPropertyDialog(pe.getProject(prj));
 		pd.open(); 
-		pd.select("Project Facets");
-		
+		Shell prefShell = new DefaultShell("Properties for "+prj); //pd.open() does not focus properties shell
 		
 		boolean javaFacet = false;
 		FacetsPropertyPage pp = new FacetsPropertyPage();
-		for(TreeItem t: pp.getSelectedFacets()){
+		pd.select(pp);
+		
+
+		for(TreeItem t: getFacets(prefShell)){
 			if(t.getText().equals("Java")){
 				javaFacet = true;
 				break;
@@ -126,8 +133,8 @@ public class ProjectConfigurationFactory {
 		pp.selectVersion("JPA",jpaVersion);
 		
 		addFurtherJPAConfiguration(jpaVersion,!javaFacet);
-		pd.ok();
-		new WaitWhile(new JobIsRunning(), TimePeriod.LONG);
+		
+		closePreferences();
 		pe.open();
 		pe.selectProjects(prj);
 		
@@ -138,10 +145,47 @@ public class ProjectConfigurationFactory {
 		
 		jpaPage.setConnectionProfile(cfg.getProfileName());
 		jpaPage.setAutoDiscovery(true);
-		pd.ok();
+		closePreferences();
 		new WaitWhile(new JobIsRunning(), TimePeriod.LONG);
 		checkPersistenceXML(prj);
 	}	
+	
+	private static List<TreeItem> getFacets(Shell prefShell){
+		List<TreeItem> facets = new ArrayList<TreeItem>();
+		for(TreeItem i : new DefaultTree(prefShell,1).getItems()){
+			if(i.isChecked())
+				facets.add(i);
+		}
+		return facets;
+	}
+	
+	
+	private static void closePreferences(){
+		Shell prefShell = new DefaultShell();
+		
+		WidgetIsFound<org.eclipse.swt.widgets.Button> applyAndCloseButton = new WidgetIsFound<>(
+				new ClassMatcher(org.eclipse.swt.widgets.Button.class), new WithMnemonicTextMatcher("Apply and Close"));
+		
+		org.jboss.reddeer.swt.api.Button btn;
+		if(applyAndCloseButton.test()){
+			btn = new PushButton("Apply and Close"); //oxygen changed button text
+		} else {
+			btn = new OkButton();	
+		}
+		btn.click();
+		
+		new WaitUntil(new ShellWithTextIsAvailable("Warning"), TimePeriod.SHORT, false);
+		//warning shell appears for every facet that was not found
+		//when eclipse is build by maven some plugins are missing
+		while(new ShellWithTextIsAvailable("Warning").test()){
+			Shell warningShell = new DefaultShell("Warning");
+			new PushButton(warningShell, "Yes").click();
+			new WaitWhile(new ShellIsAvailable(warningShell));
+		}
+		
+		new WaitWhile(new ShellIsAvailable(prefShell)); 
+		new WaitWhile(new JobIsRunning(), TimePeriod.LONG);
+	}
 
 	/**
 	 * Check persistence.xml 

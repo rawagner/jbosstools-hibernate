@@ -25,6 +25,7 @@ import org.jboss.reddeer.requirements.db.DatabaseRequirement.Database;
 import org.jboss.reddeer.workbench.impl.editor.TextEditor;
 import org.jboss.tools.hibernate.reddeer.jpt.ui.wizard.GenerateDdlWizard;
 import org.jboss.tools.hibernate.reddeer.jpt.ui.wizard.GenerateDdlWizardPage;
+import org.jboss.tools.hibernate.ui.bot.test.ProjectUtils;
 import org.jboss.tools.hibernate.ui.bot.test.factory.ConnectionProfileFactory;
 import org.jboss.tools.hibernate.ui.bot.test.factory.DriverDefinitionFactory;
 import org.jboss.tools.hibernate.ui.bot.test.factory.ProjectConfigurationFactory;
@@ -89,10 +90,10 @@ public class TablesFromJPAEntitiesGeneration extends HibernateRedDeerTest {
     
     private void testDDLGenerationMvn(boolean useConsole) {
     	prepareMavenProject();
-    	testDDLGeneration(useConsole,hbVersion, "Java Resources","src/main/java");
+    	testDDLGeneration(useConsole,hbVersion, "src/main/java");
     }
     
-	private void testDDLGeneration(boolean useConsole, String hbVersion, String... pkg ) {
+	private void testDDLGeneration(boolean useConsole, String hbVersion, String pkg ) {
 		
 		ProjectExplorer pe = new ProjectExplorer();
 		pe.open();
@@ -117,7 +118,7 @@ public class TablesFromJPAEntitiesGeneration extends HibernateRedDeerTest {
 
 		pe.open();
 		try {
-			pe.getProject(prj).getProjectItem(pkg).getProjectItem(DDL_FILE).open();  
+			ProjectUtils.getPackage(prj, DDL_FILE).open();
 		} catch (RedDeerException e) {
 			Assert.fail("DDL is not generated - known issues(s): JBIDE-19431,JBIDE-19535");	
 		}

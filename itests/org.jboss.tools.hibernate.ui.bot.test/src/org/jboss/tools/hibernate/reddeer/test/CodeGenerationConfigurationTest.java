@@ -25,8 +25,14 @@ import org.jboss.reddeer.requirements.db.DatabaseRequirement;
 import org.jboss.reddeer.requirements.db.DatabaseRequirement.Database;
 import org.jboss.reddeer.common.exception.RedDeerException;
 import org.jboss.reddeer.common.exception.WaitTimeoutExpiredException;
+import org.jboss.reddeer.swt.api.Shell;
+import org.jboss.reddeer.swt.condition.ShellIsAvailable;
+import org.jboss.reddeer.swt.impl.button.CancelButton;
+import org.jboss.reddeer.swt.impl.button.OkButton;
+import org.jboss.reddeer.swt.impl.button.PushButton;
 import org.jboss.reddeer.swt.impl.shell.DefaultShell;
 import org.jboss.reddeer.common.wait.WaitUntil;
+import org.jboss.reddeer.common.wait.WaitWhile;
 import org.jboss.reddeer.workbench.handler.EditorHandler;
 import org.jboss.reddeer.workbench.impl.editor.DefaultEditor;
 import org.jboss.tools.hibernate.reddeer.condition.EntityIsGenerated;
@@ -163,6 +169,18 @@ public class CodeGenerationConfigurationTest extends HibernateRedDeerTest {
 		re.activateTableFiltersTab();
 		re.activateTypeMappingsTab();
 		re.activateTableAndColumnsTab();
+		
+		//https://issues.jboss.org/browse/JBIDE-24574
+		if(prj.equals("mvn-hibernate52")){
+			new PushButton("Add...").click();
+			Shell consoleSelect = new DefaultShell("Select a console configuration");
+			new OkButton().click();
+			new WaitWhile(new ShellIsAvailable(consoleSelect));
+			Shell s= new DefaultShell("Add Tables & Columns");
+			new CancelButton().click();
+			new WaitWhile(new ShellIsAvailable(s));
+		}
+		
 		try {
 			re.selectAllTables("SAKILA.PUBLIC");
 		} catch (WaitTimeoutExpiredException e) {

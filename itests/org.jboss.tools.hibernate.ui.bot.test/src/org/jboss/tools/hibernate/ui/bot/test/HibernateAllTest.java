@@ -40,7 +40,7 @@ import org.junit.runners.Suite;
 
 @RunWith(RedDeerSuite.class)
 @Suite.SuiteClasses({
-
+	
 	AntFileExportTest.class,
 	CodeGenerationConfigurationTest.class,
 	CodeGenerationKeyWordsTest.class,
