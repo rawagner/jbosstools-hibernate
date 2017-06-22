@@ -22,6 +22,7 @@ import org.jboss.reddeer.requirements.db.DatabaseRequirement.Database;
 import org.jboss.reddeer.swt.impl.styledtext.DefaultStyledText;
 import org.jboss.reddeer.workbench.impl.editor.TextEditor;
 import org.jboss.tools.hibernate.reddeer.view.JPADetailsView;
+import org.jboss.tools.hibernate.ui.bot.test.ProjectUtils;
 import org.jboss.tools.hibernate.ui.bot.test.factory.ConnectionProfileFactory;
 import org.jboss.tools.hibernate.ui.bot.test.factory.DriverDefinitionFactory;
 import org.jboss.tools.hibernate.ui.bot.test.factory.ProjectConfigurationFactory;
@@ -61,10 +62,7 @@ public class JPADetailsViewTest extends HibernateRedDeerTest {
 
 	@Test
 	public void testJPADetailView() {
-
-		ProjectExplorer pe = new ProjectExplorer();
-		pe.open();
-		pe.getProject(PRJ).getProjectItem("Java Resources","src/main/java","org.gen","Actor.java").open();
+		ProjectUtils.getItem(PRJ, "org.gen", "Actor.java").open();
 		TextEditor textEditor = new TextEditor("Actor.java");
 		textEditor.setCursorPosition(20, 1);		
 

@@ -17,7 +17,7 @@ import java.util.Collection;
 
 import org.jboss.reddeer.common.exception.RedDeerException;
 import org.jboss.reddeer.common.wait.WaitUntil;
-import org.jboss.reddeer.eclipse.jdt.ui.ProjectExplorer;
+import org.jboss.reddeer.eclipse.jdt.ui.packageexplorer.PackageExplorer;
 import org.jboss.reddeer.junit.internal.runner.ParameterizedRequirementsRunnerFactory;
 import org.jboss.reddeer.junit.requirement.inject.InjectRequirement;
 import org.jboss.reddeer.junit.runner.RedDeerSuite;
@@ -101,11 +101,11 @@ public class JPAEntityGenerationTest extends HibernateRedDeerTest {
     	DatabaseConfiguration cfg = dbRequirement.getConfiguration();
     	EntityGenerationFactory.generateJPAEntities(cfg,prj,"org.gen",hbVersion,useHibernateConsole);
     	
-    	ProjectExplorer pe = new ProjectExplorer();    
+    	PackageExplorer pe = new PackageExplorer();    
     	pe.open();
     	try{
     		new WaitUntil(new EntityIsGenerated(prj, "src/main/java","org.gen","Actor.java"));
-    		pe.getProject(prj).getProjectItem("Java Resources","src/main/java","org.gen","Actor.java").open();
+    		pe.getProject(prj).getProjectItem("src/main/java","org.gen","Actor.java").open();
     	} catch (RedDeerException e) {
     		e.printStackTrace();
     		fail("Entities not generated, possible cause https://issues.jboss.org/browse/JBIDE-19175");

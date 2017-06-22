@@ -29,6 +29,7 @@ import org.jboss.tools.hibernate.reddeer.jdt.ui.wizards.NewHibernateMappingFileP
 import org.jboss.tools.hibernate.reddeer.jdt.ui.wizards.NewHibernateMappingFileWizard;
 import org.jboss.tools.hibernate.reddeer.jdt.ui.wizards.NewHibernateMappingPreviewPage;
 import org.jboss.tools.hibernate.reddeer.ui.xml.editor.Hibernate3CompoundEditor;
+import org.jboss.tools.hibernate.ui.bot.test.ProjectUtils;
 import org.jboss.tools.hibernate.ui.bot.test.XPathHelper;
 import org.junit.After;
 import org.junit.Before;
@@ -79,9 +80,7 @@ public class MappingFileTest extends HibernateRedDeerTest {
 	
 	@Test
 	public void createMappingFileFromPackage() {
-		ProjectExplorer pe = new ProjectExplorer();
-		pe.open();
-		pe.getProject(PRJ).getProjectItem("Java Resources","src/main/java",PCKG).select();
+		ProjectUtils.getPackage(PRJ, PCKG).select();
 		
 		NewHibernateMappingFileWizard wizard = new NewHibernateMappingFileWizard();
 		wizard.open();
@@ -95,12 +94,13 @@ public class MappingFileTest extends HibernateRedDeerTest {
 		assertTrue("Preview text cannot be empty", !preview.getPreviewText().equals(""));
 		wizard.finish();
 		
+		ProjectExplorer pe = new ProjectExplorer();
 		pe.open();
 		
 		assertTrue("Hbm.xml not generated: Known issue(s): JBIDE-18769, JBIDE-20042",
-				pe.getProject(PRJ).containsItem("Java Resources","src/main/java",PCKG,"Dog.hbm.xml"));
+				containsItem(PCKG, "Dog.hbm.xml"));
 		
-		pe.getProject(PRJ).getProjectItem("Java Resources","src/main/java",PCKG,"Dog.hbm.xml").open();
+		ProjectUtils.getItem(PRJ, PCKG, "Dog.hbm.xml").open();
 		Hibernate3CompoundEditor hme = new Hibernate3CompoundEditor("Dog.hbm.xml");
 		hme.activateSourceTab();
 		String sourceText = hme.getSourceText();
@@ -110,8 +110,7 @@ public class MappingFileTest extends HibernateRedDeerTest {
 		String table = xph.getMappingFileTable(PCKG + ".Dog", sourceText);
 		assertTrue(table.equals("DOG"));
 		
-		pe.open();	
-		pe.getProject(PRJ).getProjectItem("Java Resources","src/main/java",PCKG,"Owner.hbm.xml").open();
+		ProjectUtils.getItem(PRJ, PCKG, "Owner.hbm.xml").open();
 
 		hme = new Hibernate3CompoundEditor("Owner.hbm.xml");
 		hme.activateSourceTab();
@@ -121,12 +120,19 @@ public class MappingFileTest extends HibernateRedDeerTest {
 		assertEquals("OWNER", table);
 	}
 	
+	private boolean containsItem(String pckg, String item){
+		ProjectExplorer pe = new ProjectExplorer();
+		pe.open();
+		if(pe.getProject(PRJ).containsItem("Java Resources")){
+			return pe.getProject(PRJ).containsItem("Java Resources","src/main/java",pckg,item);
+		}
+		return pe.getProject(PRJ).containsItem("src/main/java",pckg,item);
+	}
+	
 	@Test
 	public void createMappingFileFromFile() {
 		
-		ProjectExplorer pe = new ProjectExplorer();
-		pe.open();
-		pe.getProject(PRJ).getProjectItem("Java Resources","src/main/java",PCKG_CLZ,"Owner.java").select();
+		ProjectUtils.getItem(PRJ, PCKG_CLZ, "Owner.java").select();
 		
 		NewHibernateMappingFileWizard wizard = new NewHibernateMappingFileWizard();
 		wizard.open();
@@ -140,12 +146,13 @@ public class MappingFileTest extends HibernateRedDeerTest {
 		assertTrue("Preview text cannot be empty", !preview.getPreviewText().equals(""));
 		wizard.finish();
 		
+		ProjectExplorer pe = new ProjectExplorer();
 		pe.open();
 		
 		assertTrue("Hbm.xml not generated: Known issue(s): JBIDE-18769, JBIDE-20042",
-				pe.getProject(PRJ).containsItem("Java Resources","src/main/java",PCKG_CLZ,"Owner.hbm.xml"));
+				containsItem(PCKG_CLZ,"Owner.hbm.xml"));
 
-		pe.getProject(PRJ).getProjectItem("Java Resources","src/main/java",PCKG_CLZ,"Owner.hbm.xml").open();
+		ProjectUtils.getItem(PRJ, PCKG_CLZ, "Owner.hbm.xml").open();
 		
 		String fileName = "Owner.hbm.xml";
 		Hibernate3CompoundEditor hme = new Hibernate3CompoundEditor(fileName);

@@ -42,5 +42,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<layout>p2</layout>
 			<url>${jbosstools-base-site}</url>
 		</repository>
+
+<repository>
+			<id>jbosstools-all</id>
+			<layout>p2</layout>
+			<url>http://download.jboss.org/jbosstools/oxygen/snapshots/updates/core/master/</url>
+		</repository>
+
+
 	</repositories>
 </project>

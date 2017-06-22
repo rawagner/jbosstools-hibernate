@@ -30,6 +30,7 @@ import org.jboss.reddeer.swt.impl.menu.ContextMenu;
 import org.jboss.reddeer.swt.impl.menu.ShellMenu;
 import org.jboss.reddeer.workbench.impl.editor.TextEditor;
 import org.jboss.tools.hibernate.reddeer.jdt.ui.jpa.process.wizard.HibernateJPAWizard;
+import org.jboss.tools.hibernate.ui.bot.test.ProjectUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -96,10 +97,10 @@ public class JpaAnnotationGenerationTest extends HibernateRedDeerTest {
 	
 	@Test
 	public void testGenerateJPAHibernateAnnotations() {		
-		selectItem("Dog");
+		ProjectUtils.getItem(prj, PCKG, "Dog.java").select();
 		new ContextMenu("Source","Generate Hibernate/JPA annotations...").select();
 		postCheck("Dog");
-		selectItem("Owner");
+		ProjectUtils.getItem(prj, PCKG, "Owner.java").select();
 		new ShellMenu("Source","Generate Hibernate/JPA annotations...").select();		
 		postCheck("Owner");
 		
@@ -110,22 +111,14 @@ public class JpaAnnotationGenerationTest extends HibernateRedDeerTest {
 		jpaWizard.next();
 		jpaWizard.finish();
 		
-		ProjectExplorer pe = new ProjectExplorer();
-		pe.open();
-		pe.getProject(prj).getProjectItem("Java Resources","src/main/java",PCKG,clazz+".java").open();	
-
+		ProjectUtils.getItem(prj, PCKG, clazz+".java").open();
+		
 		TextEditor editor = new TextEditor(clazz+".java");
 		assertTrue(editor.getText().contains("@Entity"));
 		ProblemsView pw = new ProblemsView();
 		pw.open();
 		assertEquals(0, pw.getProblems(ProblemType.ERROR).size());
 		assertEquals(0, pw.getProblems(ProblemType.WARNING).size());	
-	}
-	
-	private void selectItem(String clazz) {
-		ProjectExplorer pe = new ProjectExplorer();
-		pe.open();
-		pe.getProject(prj).getProjectItem("Java Resources","src/main/java",PCKG,clazz+".java").select();
 	}
 	
 	
