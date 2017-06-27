@@ -45,6 +45,7 @@ import org.jboss.reddeer.swt.impl.link.DefaultLink;
 import org.jboss.reddeer.swt.impl.shell.DefaultShell;
 import org.jboss.reddeer.swt.impl.tree.DefaultTree;
 import org.jboss.reddeer.swt.impl.tree.DefaultTreeItem;
+import org.jboss.reddeer.workbench.impl.shell.WorkbenchShell;
 import org.jboss.reddeer.uiforms.impl.hyperlink.DefaultHyperlink;
 import org.jboss.tools.hibernate.reddeer.editor.JpaXmlEditor;
 import org.jboss.tools.hibernate.reddeer.wizard.JpaFacetInstallPage;
@@ -135,6 +136,7 @@ public class ProjectConfigurationFactory {
 		addFurtherJPAConfiguration(jpaVersion,!javaFacet);
 		
 		closePreferences();
+		new WorkbenchShell().setFocus();
 		pe.open();
 		pe.selectProjects(prj);
 		

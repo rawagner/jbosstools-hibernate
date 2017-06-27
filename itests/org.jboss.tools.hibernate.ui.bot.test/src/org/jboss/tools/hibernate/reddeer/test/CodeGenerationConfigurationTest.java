@@ -170,6 +170,7 @@ public class CodeGenerationConfigurationTest extends HibernateRedDeerTest {
 		re.activateTypeMappingsTab();
 		re.activateTableAndColumnsTab();
 		
+		/*
 		//https://issues.jboss.org/browse/JBIDE-24574
 		if(prj.equals("mvn-hibernate52")){
 			new PushButton("Add...").click();
@@ -180,6 +181,7 @@ public class CodeGenerationConfigurationTest extends HibernateRedDeerTest {
 			new CancelButton().click();
 			new WaitWhile(new ShellIsAvailable(s));
 		}
+		*/
 		
 		try {
 			re.selectAllTables("SAKILA.PUBLIC");
