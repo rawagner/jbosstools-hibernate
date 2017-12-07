@@ -19,6 +19,7 @@
 		<testDatabase>${project.build.directory}${file.separator}requirements</testDatabase>
 		<surefire.timeout>14400</surefire.timeout>
 		<suiteClass>org.jboss.tools.hibernate.ui.bot.test.HibernateAllTest</suiteClass>
+		<memoryOptions2>-XX:MaxPermSize=384m</memoryOptions2>
 	</properties>
 
 	<build>
